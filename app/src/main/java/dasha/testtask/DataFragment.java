@@ -43,7 +43,7 @@ public class DataFragment extends Fragment {
                     int rows = Integer.parseInt(editTextRow.getText().toString());
                     int x = Integer.parseInt(editTextX.getText().toString());
                     int y = Integer.parseInt(editTextY.getText().toString());
-                    if (x<=Math.min(columns, rows)&& y<=Math.max(columns, rows)) {
+                    if (x<=Math.min(columns, rows)&& y<=Math.max(columns, rows) && x!=0 && y!=0) {
                         MatrixFragment matrixFragment = new MatrixFragment();
                         Bundle bundle = new Bundle();
                         bundle.putInt("Columns", columns);

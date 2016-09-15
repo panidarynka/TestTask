@@ -55,9 +55,9 @@ public class MatrixFragment extends Fragment {
             }
         }
         for (int k = Math.max(columns, rows); k > 0; k--) {
-            for (int row = xPosition - k; row <= xPosition + k; row++) {
-                for (int col = yPosition - k; col <= yPosition + k; col++) {
-                    if (!(xPosition == row && yPosition == col)) {
+            for (int row = yPosition - k; row <= yPosition + k; row++) {
+                for (int col = xPosition - k; col <= xPosition + k; col++) {
+                    if (!(yPosition == row && xPosition == col)) {
                         try {
                             matrix[row][col] = k;
                         } catch (Exception e) {
@@ -72,7 +72,6 @@ public class MatrixFragment extends Fragment {
 
         for (int i = 0; i < matrix.length; i++, System.out.println()) {
             for (int j = 0; j < matrix[i].length; j++) {
-//                Log.d("Matrix", matrix[i][j] + " " + i + " " + j);
                 list.add(matrix[i][j]);
             }
         }
