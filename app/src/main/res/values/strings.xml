@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestTask</string>
+
+    <!--data fragment-->
+    <string name="column_number">Columns number: </string>
+    <string name="row_number">Rows number: </string>
+    <string name="x_position">0 x position: </string>
+    <string name="y_position">0 y position: </string>
+    <string name="button_build">Build</string>
+</resources>
